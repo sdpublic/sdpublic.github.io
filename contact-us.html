@@ -1,54 +1,56 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-<title>S. D. Public School | Contact Us</title>
-<meta charset="UTF-8" />
-<link rel="stylesheet" type="text/css" href="styles/style.css" />
-<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+<!-- <link rel="stylesheet" type="text/css" href="webcss.css" /> -->
+<title> S. D. Public School </title>
+<html lang="en-US">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="send_email.css"> 
+  <script src="jquery-2.2.4.js"></script>
+  <script src="login.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="styles/style.css" />
 </head>
-<body>
-<div id="page">
-  <div id="header">
+
+<body >
+<div id="id1">
+	  <div id="header">
     <div id="section">
       <div><a href="index.html"><img src="images/logo.gif" alt="" /></a></div>
       <span>sdpublicschool@gmail.com <br />
       <br />
-       +91-9935949987</span> </div>
+      +91-9935949987</span> </div>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="notification.html">Notifications</a></li>
-
-      <li class="current"><a href="contact-us.html">Contact us</a></li>
+      <li><a href="photos.html">Photos</a></li>
+      <li><a href="contact-us.html">Contact us</a></li>
     </ul>
-  </div>
-  <div id="content">
-    <div>
-      <h3>Contact Us</h3>
-      <p><strong>We are more than happy to help for any query . </strong></p>
-      <h5>Shyam Badan Shukla</h5>
-      <p>Manager</p>
-      <p>Vill + Post Pichhaura , District - Gorakhpur </p>
-      <p>Tel: +91-9935949987</p>
-      <p>Email: ssatyajeet180@gmail.com</p>
-    </div>
-  </div>
-  <div id="footer">
-    <div>
-      <div id="connect"> <a href="https://www.facebook.com/sdpublicschool1/"><img src="images/icon-facebook.gif" alt="" /></a> <a href="#"><img src="images/icon-twitter.gif" alt="" /></a> <a href="#"><img src="images/icon-youtube.gif" alt="" /></a> </div>
-      <div class="section">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="admissions.html">Admissions</a></li>
-          <li><a href="notification.html">Notifications</a></li>
-
-          <li class="last"><a href="contact-us.html">Contact us</a></li>
-        </ul>
       </div>
-    </div>
-  </div>
+  	  <div id="form_text" style="width:60vw;height:83vh;margin:auto ;margin-top : -17px ; text-align:center; background-color:#87cefa">  
+			 <h2 style="color: white;"> Type the message and submit to send any query </h2>
+			 <form action="send_email.php" method="post" name="form" class="form-box">
+				 <label style="color: white;"> Name: </label>
+				 <input style= " border-color: black ;float: right ;margin-left:4vw;width:20vw; height:3vw; border-style: solid; border-width: 3px;font-size:20px;" 
+				    type="text" name="name" placeholder="  type name here"> <br><br>
+				 <label style="color: white;"> your email: </label>
+				 <input style= "border-color: black ;float: right ; margin-left:2.5vw;width:20vw; height:3vw; border-style: solid; border-width: 3px;font-size:20px;"
+				 type="email" name="email" placeholder="  type email" id="emailcss"><br><br>
+				 <label style="color: white;"> Mobile no: </label> 
+				 <input style= "border-color: black ;float: right ; margin-left:2.5vw;width:20vw; height:3vw; border-style: solid; border-width: 3px;font-size:20px;" 
+				 type="text" name="lib_phone_no" placeholder="  phone number" id="phonecss"><br><br>
+				 
+				 <label style="color: white;"> Message </label>
+				 <textarea name="msg" style= " border-color: black ;float: right ;margin-left:4vw;width:20vw; height:6vw; border-style: solid;border-width: 3px;font-size:20px;"> </textarea>  <br><br><br><br>
+				 <button style= " border-color: black ;float:center; width:8vw; cursor: pointer; height:2.8vw" type="submit" name="submit" > Submit </button><br><br>
+			 </form>
+	 </div>
 </div>
 </body>
 </html>

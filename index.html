@@ -4,7 +4,9 @@
 <title>S. D. Public School</title>
 <meta charset="UTF-8" />
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
+<link rel="stylesheet" href="w3.css">
 <!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+
 </head>
 <body>
 <div id="page">
@@ -19,27 +21,70 @@
       <li><a href="about.html">About Us</a></li>
       <li><a href="admissions.html">Admissions</a></li>
       <li><a href="notification.html">Notifications</a></li>
+      <li><a href="photos.html">Photos</a></li>
       <li><a href="contact-us.html">Contact us</a></li>
     </ul>
+     
+
+
+     
+
+
     <div id="tagline">
       <div>
         <h4>Where Learning really matters </h4>
         <p> We target on the continuos and comprehensive evaluation rather than marksheets</p>
       </div>
     </div>
-  </div>
-  <div id="content">
+
+     <div id="content">
     <div id="home">
       <div>
         <div id="aside">
           <div>
-            <h1>Welcome to <span class="last">S. D. Public School</span></h1>
-            <a href="#"><img src="images/sb1.jpg" alt="" style="height: 30% ; width: 80 %" /></a>
+           <h1>Welcome to <span class="last">S. D. Public School</span></h1>
+
+				<div class="w3-content w3-display-container" >
+				  <img class="mySlides" src="sch10.jpg" style="width:150%">
+				  <img class="mySlides" src="sch11.jpg" style="width:150%">
+				  <img class="mySlides" src="sch4.jpg" style="width:150%">
+				  
+				  <img class="mySlides" src="sch13.jpg" style="width:150%">
+
+				  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				  <button class="w3-button w3-black w3-display-right" style="right:-50%" onclick="plusDivs(1)">&#10095;</button>
+				</div>
+
+				<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+				     x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+				</script>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+      </div>
+  
   <div id="footer">
     <div>
       <div id="connect"> <a href="https://www.facebook.com/sdpublicschool1/"><img src="images/icon-facebook.gif" alt="" /></a> <a href="#"><img src="images/icon-twitter.gif" alt="" /></a> <a href="#"><img src="images/icon-youtube.gif" alt="" /></a> </div>
